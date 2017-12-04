@@ -11,7 +11,8 @@
 
   var frameworks = {
     'ActiveJS':             { abbr: 'AJS',  version: ['ActiveSupport']                      },
-    'AngularJS':            { abbr: 'ng',   version: ['angular', 'version', 'full']         },
+    'AngularJS':            { abbr: 'NGjs',   version: ['angular', 'version', 'full']         },
+    'Angular':              { abbr: 'ng',  version: function(){;return !!ng ? "unknown" : undefined}},
     'Backbone.js':          { abbr: 'BB',   version: ['Backbone', 'VERSION']                },
     'Base2':                { abbr: 'Base', version: ['base2', 'version']                   },
     'Clientcide Libraries': { abbr: 'Moo',  version: ['Clientcide', 'version']              },
